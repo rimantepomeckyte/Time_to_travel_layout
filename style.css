@@ -1,0 +1,83 @@
+html, body {
+    height: 100%;
+    font-family: Georgia, sans-serif;
+}
+h1{
+    text-align: center;
+}
+.bookflight img {
+    height: 30px;
+}
+
+.visas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin: 20px;
+}
+
+.holidaybox {
+    height: 500px;
+    display: grid;
+    grid-template-rows: 2fr repeat(2, 1fr);
+    border: solid #d9d4c3 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.holidayjpg img{
+    width: 100%;
+    height: 20em;
+    background-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-size: cover;
+}
+.flightinfo{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.flightinfo h3{
+    margin-bottom: -10px;
+}
+.flightinfo p{
+    color: gray;
+}
+
+
+.bookflight {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.bookflight p{
+    grid-column: 2/3;
+}
+.bookflight img{
+    grid-column: 1/2;
+}
+.bookflight input{
+    grid-column: 6/10;
+    background-color: #30a4cf;
+    border: none;
+    color: #ffffff;
+    height: 35px;
+    width: 100%;
+    border-radius: 5px;
+}
+.bookflight input:hover{
+    background-color: #75cbeb;
+}
+
+@media (max-width: 767px) {
+    .visas{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 0;
+    }
+    
+}
